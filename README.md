@@ -1,5 +1,9 @@
 # iOS-bid-for-app
 
+****PLEASE READ***** 
+****PLEASE RESPOND AS TO WEATHER YOU CAN COMPLETE THESE TASKS, WHAT YOU WOULD NEED AS FAR AS TIME, ACCESS ETC, COSTS AND MESSAGE ME BACK VIA THE WAY I CONTACTED YOU THANK YOU
+
+
 Developing an app for organization
 
 This is the file for the requested requirements of the iOS development app in procress this is not competely comprehensive and we totally anticipate revisions and additions and or exclutions there will likly be edits to this document and i will be adding wireframes,concepts,UI Demos, ETC. please keep that in mind.  
