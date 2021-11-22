@@ -29,6 +29,7 @@ The phone portion will be its own app. In this app techs and managers will be ab
 
 
 FORM
+
 ⦁	Conversationall from that inputs generate to profile and calander (see attached info on profiles and calandar)
 
 
@@ -43,11 +44,13 @@ PROFILES
 
 
 CALENDAR
+
 ⦁	new event created after completion of form
 ⦁	collects info form profiles and builds event 
 ⦁	one directional can edit info in the calendar but will not reflect in the 
 
 JOBS
+
 ⦁	collect info from profiles and calendar build job 
 ⦁	edit infomation in profiles 
 ⦁	text reminders to customer and techs
@@ -59,5 +62,6 @@ JOBS
 ⦁	airtable-esc
 
 MAP
+
 ⦁	Upon form submission drop pin on map of job with viewable info upon click on pin.
 ⦁	change color double circle one color for tech one color for date
