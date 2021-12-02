@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dialer-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Dialer" customClass="ViewController" customModule="Phone_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fMB-ku-S2U">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Tasks" image="flame" catalog="system" id="6Gm-6S-fax" userLabel="Tasks"/>
+                                    <tabBarItem title="Recents" image="clock" catalog="system" id="aSS-0n-AEF" userLabel="Recents"/>
+                                    <tabBarItem title="Customers" image="person.crop.circle.fill" catalog="system" id="xfM-Ky-RZ4" userLabel="Customers"/>
+                                    <tabBarItem title="Dialer" image="circle.grid.3x3.fill" catalog="system" id="rsW-rW-1Tw"/>
+                                    <tabBarItem title="Voicemail" image="recordingtape" catalog="system" id="OB7-ra-mCI"/>
+                                </items>
+                            </tabBar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="PHONE" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRt-u5-6Hw">
+                                <rect key="frame" x="69" y="114" width="276" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="73"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzI-Q2-jlB">
+                                <rect key="frame" x="147" y="219" width="117" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Customer"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw4-nN-8nT" userLabel="Call">
+                                <rect key="frame" x="155" y="674" width="105" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <imageReference key="image" image="phone.fill.arrow.up.right" catalog="system" symbolScale="large"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIi-7w-aH6">
+                                <rect key="frame" x="36" y="285" width="100" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" subtitle="">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="1">
+                                            <attributes>
+                                                <font key="NSFont" size="43" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kn-26-BvB">
+                                <rect key="frame" x="155" y="285" width="100" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="2">
+                                            <attributes>
+                                                <font key="NSFont" size="43" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle">
+                                        <fragment content="ABC">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdI-vZ-Tkf">
+                                <rect key="frame" x="275" y="285" width="100" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="3">
+                                            <attributes>
+                                                <font key="NSFont" size="43" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle">
+                                        <fragment content="DEF">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHE-Ye-rLS">
+                                <rect key="frame" x="36" y="407" width="100" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="4">
+                                            <attributes>
+                                                <font key="NSFont" size="43" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle">
+                                        <fragment content="GHI">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms9-Qs-66x">
+                                <rect key="frame" x="155" y="407" width="100" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="5">
+                                            <attributes>
+                                                <font key="NSFont" size="43" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle">
+                                        <fragment content="JKL">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZG-KC-ewg">
+                                <rect key="frame" x="275" y="407" width="100" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="6">
+                                            <attributes>
+                                                <font key="NSFont" size="43" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle">
+                                        <fragment content="MNO">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEG-Tr-UeA">
+                                <rect key="frame" x="36" y="529" width="100" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="7">
+                                            <attributes>
+                                                <font key="NSFont" size="43" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle">
+                                        <fragment content="PQRS">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nw-l3-ivY">
+                                <rect key="frame" x="155" y="529" width="100" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="8">
+                                            <attributes>
+                                                <font key="NSFont" size="43" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle">
+                                        <fragment content="TUV">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zp-7T-xnc">
+                                <rect key="frame" x="275" y="529" width="100" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="9">
+                                            <attributes>
+                                                <font key="NSFont" size="43" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle">
+                                        <fragment content="WXYZ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="47.544642857142854"/>
+        </scene>
+        <!--Customers-->
+        <scene sceneID="nKp-gU-fjG">
+            <objects>
+                <viewController id="thu-I4-jaV" userLabel="Customers" customClass="ViewController" customModule="Phone_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JY5-l6-Gjq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YlR-Bh-4U6">
+                                <rect key="frame" x="0.0" y="813" width="414" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Tasks" image="flame" catalog="system" id="fvt-rb-o4s" userLabel="Tasks"/>
+                                    <tabBarItem title="Recents" image="clock" catalog="system" id="Kf0-YY-Xm6" userLabel="Recents"/>
+                                    <tabBarItem title="Customers" image="person.crop.circle.fill" catalog="system" id="g7M-oN-PYg" userLabel="Customers"/>
+                                    <tabBarItem title="Dialer" image="circle.grid.3x3.fill" catalog="system" id="7EW-bc-mCc"/>
+                                    <tabBarItem title="Voicemail" image="recordingtape" catalog="system" id="X8k-mq-yIS"/>
+                                </items>
+                            </tabBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QCg-Px-ee5">
+                                <rect key="frame" x="0.0" y="186" width="414" height="596"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="596" id="dVx-NM-kpR"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="4vA-l2-NkQ">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="87"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4vA-l2-NkQ" id="b2l-Oi-NcT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" label="Customer ID# and info">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="t2O-h0-nJ5">
+                                <rect key="frame" x="0.0" y="85" width="414" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected Twilio number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQA-cO-H4B">
+                                <rect key="frame" x="68" y="129" width="278" height="39"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="T3D-oA-o0I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qr-WX-N1i">
+                                <rect key="frame" x="0.0" y="41" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="MGT-j8-8Cq"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="add new customer" id="VGh-bp-uFs">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gHS-jz-pEQ"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="55k-aN-6OY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RQA-cO-H4B" firstAttribute="centerX" secondItem="JY5-l6-Gjq" secondAttribute="centerX" id="7vu-zt-bMe"/>
+                            <constraint firstItem="RQA-cO-H4B" firstAttribute="centerX" secondItem="t2O-h0-nJ5" secondAttribute="centerX" id="Hvf-Sv-UjI"/>
+                            <constraint firstItem="RQA-cO-H4B" firstAttribute="centerX" secondItem="YlR-Bh-4U6" secondAttribute="centerX" id="JLH-ws-2DJ"/>
+                            <constraint firstItem="YlR-Bh-4U6" firstAttribute="top" secondItem="QCg-Px-ee5" secondAttribute="bottom" constant="31" id="Mxk-WY-DJs"/>
+                            <constraint firstItem="RQA-cO-H4B" firstAttribute="top" secondItem="JY5-l6-Gjq" secondAttribute="top" constant="129" id="QhP-uK-5mx"/>
+                            <constraint firstItem="RQA-cO-H4B" firstAttribute="leading" secondItem="55k-aN-6OY" secondAttribute="leading" constant="68" id="RNG-lW-oSU"/>
+                            <constraint firstItem="RQA-cO-H4B" firstAttribute="centerX" secondItem="1qr-WX-N1i" secondAttribute="centerX" id="Vxn-T5-77L"/>
+                            <constraint firstItem="1qr-WX-N1i" firstAttribute="bottom" secondItem="t2O-h0-nJ5" secondAttribute="top" id="WcF-4q-Oz8"/>
+                            <constraint firstItem="RQA-cO-H4B" firstAttribute="top" secondItem="t2O-h0-nJ5" secondAttribute="bottom" id="aPC-XK-nb9"/>
+                            <constraint firstItem="QCg-Px-ee5" firstAttribute="leading" secondItem="YlR-Bh-4U6" secondAttribute="leading" id="cl1-G6-4bd"/>
+                            <constraint firstItem="QCg-Px-ee5" firstAttribute="leading" secondItem="1qr-WX-N1i" secondAttribute="leading" id="fHe-Ql-VH9"/>
+                            <constraint firstItem="RQA-cO-H4B" firstAttribute="centerX" secondItem="QCg-Px-ee5" secondAttribute="centerX" id="g3h-Cs-dm8"/>
+                            <constraint firstItem="QCg-Px-ee5" firstAttribute="leading" secondItem="JY5-l6-Gjq" secondAttribute="leading" id="gPF-bd-odD"/>
+                            <constraint firstItem="1qr-WX-N1i" firstAttribute="top" secondItem="JY5-l6-Gjq" secondAttribute="topMargin" constant="-3" id="h55-e6-Jwx"/>
+                            <constraint firstItem="QCg-Px-ee5" firstAttribute="leading" secondItem="t2O-h0-nJ5" secondAttribute="leading" id="uxv-o1-YbI"/>
+                            <constraint firstItem="QCg-Px-ee5" firstAttribute="top" secondItem="RQA-cO-H4B" secondAttribute="bottom" constant="18" id="wPq-hb-4Bi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xft-zi-BWv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="749"/>
+        </scene>
+        <!--Customer info-->
+        <scene sceneID="RoY-Va-UE6">
+            <objects>
+                <viewController id="5ZZ-s5-eTP" userLabel="Customer info" customClass="ViewController" customModule="Phone_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PkY-zO-Lir">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIL-19-6xo">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="0z2-QX-PrE"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="Tasks" image="flame" catalog="system" id="smn-5R-t1g" userLabel="Tasks"/>
+                                    <tabBarItem title="Recents" image="clock" catalog="system" id="BOH-nb-hGa" userLabel="Recents"/>
+                                    <tabBarItem title="Customers" image="person.crop.circle.fill" catalog="system" id="3eT-Ef-97I" userLabel="Customers"/>
+                                    <tabBarItem title="Dialer" image="circle.grid.3x3.fill" catalog="system" id="XL2-kU-dhQ"/>
+                                    <tabBarItem title="Voicemail" image="recordingtape" catalog="system" id="iL6-id-Csh"/>
+                                </items>
+                            </tabBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPA-it-H6b">
+                                <rect key="frame" x="0.0" y="56" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Pdi-qk-YFL"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem id="MQI-Bh-5uu">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Contacts" id="Zz7-XH-XsF"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Edit" id="7Ns-rJ-OAM"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7E-8D-PWh">
+                                <rect key="frame" x="0.0" y="210" width="414" height="49"/>
+                                <subviews>
+                                    <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7od-N7-CaZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <items>
+                                            <tabBarItem title="Message" image="message.fill" catalog="system" id="1D0-MQ-tLL" userLabel="Message"/>
+                                            <tabBarItem title="Call" image="phone.fill" catalog="system" id="Tu7-N7-dWa"/>
+                                            <tabBarItem title="Jobs" image="wrench.and.screwdriver.fill" catalog="system" id="PiJ-Ha-IHn"/>
+                                            <tabBarItem title="Email" image="envelope.fill" catalog="system" id="f3V-9c-2TS"/>
+                                            <tabBarItem title="Quickbooks" image="book.circle.fill" catalog="system" id="thz-Tf-RRg"/>
+                                        </items>
+                                    </tabBar>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7od-N7-CaZ" firstAttribute="leading" secondItem="o7E-8D-PWh" secondAttribute="leading" symbolic="YES" id="COT-2y-c3G"/>
+                                    <constraint firstAttribute="trailing" secondItem="7od-N7-CaZ" secondAttribute="trailing" symbolic="YES" id="PuB-zb-AVQ"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TSI-49-Bu2">
+                                <rect key="frame" x="197" y="118.5" width="20" height="71"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="notes" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Km5-hn-Vgg">
+                                <rect key="frame" x="20" y="386" width="276" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="blacklist customer" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKY-l5-TwP">
+                                <rect key="frame" x="20" y="513" width="315" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="phone numbers" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zYX-tU-TV1">
+                                <rect key="frame" x="20" y="290" width="276" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y82-Dh-usm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zYX-tU-TV1" firstAttribute="leading" secondItem="PkY-zO-Lir" secondAttribute="leadingMargin" id="2jv-vW-cZd"/>
+                            <constraint firstItem="MIL-19-6xo" firstAttribute="bottom" secondItem="y82-Dh-usm" secondAttribute="bottom" id="Aer-cm-ymA"/>
+                            <constraint firstItem="o7E-8D-PWh" firstAttribute="trailing" secondItem="cPA-it-H6b" secondAttribute="trailing" id="EYQ-Qf-Ycy"/>
+                            <constraint firstItem="o7E-8D-PWh" firstAttribute="leading" secondItem="PkY-zO-Lir" secondAttribute="leading" id="HIR-om-kwl"/>
+                            <constraint firstItem="zYX-tU-TV1" firstAttribute="top" secondItem="o7E-8D-PWh" secondAttribute="bottom" constant="31" id="ORl-wt-mOx"/>
+                            <constraint firstItem="Km5-hn-Vgg" firstAttribute="top" secondItem="zYX-tU-TV1" secondAttribute="bottom" constant="42" id="OWK-2d-7LC"/>
+                            <constraint firstItem="o7E-8D-PWh" firstAttribute="leading" secondItem="MIL-19-6xo" secondAttribute="leading" id="RZu-Gr-joT"/>
+                            <constraint firstItem="TSI-49-Bu2" firstAttribute="top" secondItem="cPA-it-H6b" secondAttribute="bottom" constant="18" id="T9r-6G-lw0"/>
+                            <constraint firstItem="o7E-8D-PWh" firstAttribute="leading" secondItem="cPA-it-H6b" secondAttribute="leading" id="VF5-zG-DXa"/>
+                            <constraint firstItem="o7E-8D-PWh" firstAttribute="top" secondItem="PkY-zO-Lir" secondAttribute="top" constant="210" id="Wxa-vb-RMX"/>
+                            <constraint firstItem="o7E-8D-PWh" firstAttribute="centerX" secondItem="TSI-49-Bu2" secondAttribute="centerX" id="bJD-z3-bBc"/>
+                            <constraint firstItem="zYX-tU-TV1" firstAttribute="trailing" secondItem="Km5-hn-Vgg" secondAttribute="trailing" id="eK5-Uy-jJD"/>
+                            <constraint firstItem="cPA-it-H6b" firstAttribute="top" secondItem="y82-Dh-usm" secondAttribute="top" constant="12" id="gYJ-dk-aI6"/>
+                            <constraint firstItem="zYX-tU-TV1" firstAttribute="leading" secondItem="NKY-l5-TwP" secondAttribute="leading" id="n2G-hC-USg"/>
+                            <constraint firstItem="o7E-8D-PWh" firstAttribute="top" secondItem="TSI-49-Bu2" secondAttribute="bottom" constant="20" id="nDt-uy-giJ"/>
+                            <constraint firstAttribute="trailing" secondItem="o7E-8D-PWh" secondAttribute="trailing" id="q0g-jI-hJ6"/>
+                            <constraint firstItem="o7E-8D-PWh" firstAttribute="trailing" secondItem="MIL-19-6xo" secondAttribute="trailing" id="uh6-9L-4HJ"/>
+                            <constraint firstItem="NKY-l5-TwP" firstAttribute="top" secondItem="Km5-hn-Vgg" secondAttribute="bottom" constant="73" id="yjP-oh-Q09"/>
+                            <constraint firstItem="zYX-tU-TV1" firstAttribute="leading" secondItem="Km5-hn-Vgg" secondAttribute="leading" id="zvW-6i-dWZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJn-0o-kxi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753.62318840579712" y="748.66071428571422"/>
+        </scene>
+        <!--Add New Customer-->
+        <scene sceneID="KXD-6C-ijg">
+            <objects>
+                <viewController id="IKb-fP-u7e" userLabel="Add New Customer" customClass="ViewController" customModule="Phone_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f8l-Sn-8ck">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7p-jP-wqP">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="iBX-OV-Spg"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="Tasks" image="flame" catalog="system" id="tVZ-T0-Ve1" userLabel="Tasks"/>
+                                    <tabBarItem title="Recents" image="clock" catalog="system" id="tI6-Dd-iqS" userLabel="Recents"/>
+                                    <tabBarItem title="Customers" image="person.crop.circle.fill" catalog="system" id="m3N-tM-W5Y" userLabel="Customers"/>
+                                    <tabBarItem title="Dialer" image="circle.grid.3x3.fill" catalog="system" id="sde-xi-CHs"/>
+                                    <tabBarItem title="Voicemail" image="recordingtape" catalog="system" id="0jL-kE-jBt"/>
+                                </items>
+                            </tabBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="41o-if-Sas">
+                                <rect key="frame" x="152" y="47.5" width="110" height="97"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chV-7N-H9Q">
+                                <rect key="frame" x="161" y="143" width="92" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Photo"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ox6-Xc-LZF">
+                                <rect key="frame" x="0.0" y="216" width="414" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2if-Jb-8VR">
+                                <rect key="frame" x="0.0" y="248" width="414" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I1W-LH-HNf">
+                                <rect key="frame" x="0.0" y="282" width="414" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Company" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adG-z5-pFy">
+                                <rect key="frame" x="0.0" y="347" width="414" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="elx-Qb-2B9">
+                                <rect key="frame" x="0.0" y="314" width="414" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="add field" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s9A-01-QdO">
+                                <rect key="frame" x="0.0" y="522" width="414" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Notes" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N3N-t0-sSO">
+                                <rect key="frame" x="0.0" y="432" width="414" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cm7-k7-O8Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="chV-7N-H9Q" firstAttribute="centerX" secondItem="f8l-Sn-8ck" secondAttribute="centerX" id="0BH-bm-TSg"/>
+                            <constraint firstItem="N3N-t0-sSO" firstAttribute="leading" secondItem="s9A-01-QdO" secondAttribute="leading" id="1Ja-cV-5Cd"/>
+                            <constraint firstItem="chV-7N-H9Q" firstAttribute="centerX" secondItem="Ox6-Xc-LZF" secondAttribute="centerX" id="4Pp-zA-U89"/>
+                            <constraint firstItem="chV-7N-H9Q" firstAttribute="centerX" secondItem="elx-Qb-2B9" secondAttribute="centerX" id="8hB-oF-tEw"/>
+                            <constraint firstItem="chV-7N-H9Q" firstAttribute="centerX" secondItem="I7p-jP-wqP" secondAttribute="centerX" id="9iC-to-vuM"/>
+                            <constraint firstItem="N3N-t0-sSO" firstAttribute="leading" secondItem="2if-Jb-8VR" secondAttribute="leading" id="B5c-Pe-eJB"/>
+                            <constraint firstItem="chV-7N-H9Q" firstAttribute="centerX" secondItem="adG-z5-pFy" secondAttribute="centerX" id="BIT-Ve-Sdd"/>
+                            <constraint firstItem="s9A-01-QdO" firstAttribute="top" secondItem="N3N-t0-sSO" secondAttribute="bottom" constant="56" id="C2B-ep-oF4"/>
+                            <constraint firstItem="N3N-t0-sSO" firstAttribute="leading" secondItem="I7p-jP-wqP" secondAttribute="leading" id="Dje-N0-sOF"/>
+                            <constraint firstItem="elx-Qb-2B9" firstAttribute="top" secondItem="2if-Jb-8VR" secondAttribute="bottom" constant="32" id="GrG-oU-rnD"/>
+                            <constraint firstItem="I7p-jP-wqP" firstAttribute="bottom" secondItem="cm7-k7-O8Z" secondAttribute="bottom" id="HLa-da-Z31"/>
+                            <constraint firstItem="N3N-t0-sSO" firstAttribute="leading" secondItem="elx-Qb-2B9" secondAttribute="leading" id="J2m-2i-lI1"/>
+                            <constraint firstItem="chV-7N-H9Q" firstAttribute="centerX" secondItem="s9A-01-QdO" secondAttribute="centerX" id="JmQ-gV-pZV"/>
+                            <constraint firstItem="chV-7N-H9Q" firstAttribute="top" secondItem="cm7-k7-O8Z" secondAttribute="top" constant="99" id="S8A-g2-9Cq"/>
+                            <constraint firstItem="N3N-t0-sSO" firstAttribute="leading" secondItem="I1W-LH-HNf" secondAttribute="leading" id="SAH-hh-1nj"/>
+                            <constraint firstItem="adG-z5-pFy" firstAttribute="top" secondItem="I1W-LH-HNf" secondAttribute="bottom" constant="31" id="Sdq-3y-YkD"/>
+                            <constraint firstItem="N3N-t0-sSO" firstAttribute="leading" secondItem="adG-z5-pFy" secondAttribute="leading" id="TOB-Ae-PFp"/>
+                            <constraint firstItem="N3N-t0-sSO" firstAttribute="top" secondItem="adG-z5-pFy" secondAttribute="bottom" constant="51" id="US7-xM-orK"/>
+                            <constraint firstItem="chV-7N-H9Q" firstAttribute="centerX" secondItem="41o-if-Sas" secondAttribute="centerX" id="VPQ-aH-t3B"/>
+                            <constraint firstItem="41o-if-Sas" firstAttribute="top" secondItem="cm7-k7-O8Z" secondAttribute="top" constant="3" id="XAK-Ug-wdy"/>
+                            <constraint firstItem="Ox6-Xc-LZF" firstAttribute="top" secondItem="41o-if-Sas" secondAttribute="bottom" constant="71" id="ZIc-dW-NgZ"/>
+                            <constraint firstItem="41o-if-Sas" firstAttribute="leading" secondItem="cm7-k7-O8Z" secondAttribute="leading" constant="152" id="ZpP-xN-avf"/>
+                            <constraint firstItem="N3N-t0-sSO" firstAttribute="leading" secondItem="Ox6-Xc-LZF" secondAttribute="leading" id="dUx-gE-ZGI"/>
+                            <constraint firstItem="N3N-t0-sSO" firstAttribute="leading" secondItem="f8l-Sn-8ck" secondAttribute="leading" id="gdx-pt-4QB"/>
+                            <constraint firstItem="chV-7N-H9Q" firstAttribute="centerX" secondItem="I1W-LH-HNf" secondAttribute="centerX" id="hXc-Q0-yBa"/>
+                            <constraint firstItem="chV-7N-H9Q" firstAttribute="centerX" secondItem="N3N-t0-sSO" secondAttribute="centerX" id="p8x-ZG-qfn"/>
+                            <constraint firstItem="N3N-t0-sSO" firstAttribute="top" secondItem="f8l-Sn-8ck" secondAttribute="top" constant="432" id="ppS-Ud-Vcf"/>
+                            <constraint firstItem="Ox6-Xc-LZF" firstAttribute="top" secondItem="chV-7N-H9Q" secondAttribute="bottom" constant="42" id="rUv-lI-n70"/>
+                            <constraint firstItem="chV-7N-H9Q" firstAttribute="centerX" secondItem="2if-Jb-8VR" secondAttribute="centerX" id="rrs-cv-QN3"/>
+                            <constraint firstItem="N3N-t0-sSO" firstAttribute="top" secondItem="elx-Qb-2B9" secondAttribute="bottom" constant="84" id="xKS-Jj-Mv1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lrF-EZ-uh9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9X-MM-MJm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1486.9565217391305" y="748.66071428571422"/>
+        </scene>
+        <!--Tasks-->
+        <scene sceneID="wnS-M7-eIj">
+            <objects>
+                <viewController id="Ssd-Za-GUw" userLabel="Tasks" customClass="ViewController" customModule="Phone_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z9E-SQ-BL8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLM-F4-HyY">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="hoo-98-1I1"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="Tasks" image="flame" catalog="system" id="fJv-NR-hzO" userLabel="Tasks"/>
+                                    <tabBarItem title="Recents" image="clock" catalog="system" id="kSb-BI-i4o" userLabel="Recents"/>
+                                    <tabBarItem title="Customers" image="person.crop.circle.fill" catalog="system" id="wZu-Tr-o18" userLabel="Customers"/>
+                                    <tabBarItem title="Dialer" image="circle.grid.3x3.fill" catalog="system" id="Pkm-Pg-Q0M"/>
+                                    <tabBarItem title="Voicemail" image="recordingtape" catalog="system" id="zov-gf-Qzt"/>
+                                </items>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See tasks project " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IL-ND-yrv">
+                                <rect key="frame" x="115" y="248" width="184" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="Otc-Hy-Bm8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7xY-pf-1Em"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0IL-ND-yrv" firstAttribute="top" secondItem="7xY-pf-1Em" secondAttribute="top" constant="204" id="O17-Gx-a67"/>
+                            <constraint firstItem="0IL-ND-yrv" firstAttribute="centerX" secondItem="dLM-F4-HyY" secondAttribute="centerX" id="QcK-K4-S25"/>
+                            <constraint firstItem="0IL-ND-yrv" firstAttribute="leading" secondItem="7xY-pf-1Em" secondAttribute="leading" constant="115" id="Scj-l5-PFg"/>
+                            <constraint firstItem="dLM-F4-HyY" firstAttribute="bottom" secondItem="7xY-pf-1Em" secondAttribute="bottom" id="VIh-Zu-3H7"/>
+                            <constraint firstItem="dLM-F4-HyY" firstAttribute="leading" secondItem="z9E-SQ-BL8" secondAttribute="leading" id="Zrd-tn-ax3"/>
+                            <constraint firstItem="0IL-ND-yrv" firstAttribute="centerX" secondItem="z9E-SQ-BL8" secondAttribute="centerX" id="ryl-Nh-Cu5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lc3-Vv-cka" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="1425"/>
+        </scene>
+        <!--Voicemails-->
+        <scene sceneID="5bR-C5-Ak2">
+            <objects>
+                <viewController id="QJZ-1r-oMF" userLabel="Voicemails" customClass="ViewController" customModule="Phone_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ray-Mj-1gf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uSG-xS-HYa">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Tasks" image="flame" catalog="system" id="T9K-he-QIp" userLabel="Tasks"/>
+                                    <tabBarItem title="Recents" image="clock" catalog="system" id="MGX-YL-Y4z" userLabel="Recents"/>
+                                    <tabBarItem title="Customers" image="person.crop.circle.fill" catalog="system" id="Lyw-7f-YZY" userLabel="Customers"/>
+                                    <tabBarItem title="Dialer" image="circle.grid.3x3.fill" catalog="system" id="sYI-yc-WAK"/>
+                                    <tabBarItem title="Voicemail" image="recordingtape" catalog="system" id="5qp-eY-UH3"/>
+                                </items>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See stock ios Voicemails tab in phone app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-9T-6cQ">
+                                <rect key="frame" x="38" y="297" width="319" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="eIA-hF-RKA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nZg-Bj-4Ev"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tMZ-9T-6cQ" firstAttribute="leading" secondItem="nZg-Bj-4Ev" secondAttribute="leading" constant="38" id="QpL-n2-jpU"/>
+                            <constraint firstItem="nZg-Bj-4Ev" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tMZ-9T-6cQ" secondAttribute="trailing" symbolic="YES" id="VXf-c2-hWj"/>
+                            <constraint firstItem="tMZ-9T-6cQ" firstAttribute="top" secondItem="nZg-Bj-4Ev" secondAttribute="top" constant="253" id="mTC-Lx-agT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7KN-y1-NtM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="2787.7232142857142"/>
+        </scene>
+        <!--Recents-->
+        <scene sceneID="jF4-Ao-Rjq">
+            <objects>
+                <viewController id="Aqm-nq-Ssb" userLabel="Recents" customClass="ViewController" customModule="Phone_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Wi-fc-T6v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUB-aS-ydC">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="RAC-rj-pc4"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="Tasks" image="flame" catalog="system" id="Txj-Bo-xav" userLabel="Tasks"/>
+                                    <tabBarItem title="Recents" image="clock" catalog="system" id="kvh-8p-xFX" userLabel="Recents"/>
+                                    <tabBarItem title="Customers" image="person.crop.circle.fill" catalog="system" id="xAg-yI-p6Q" userLabel="Customers"/>
+                                    <tabBarItem title="Dialer" image="circle.grid.3x3.fill" catalog="system" id="bDd-zN-mGW"/>
+                                    <tabBarItem title="Voicemail" image="recordingtape" catalog="system" id="ixt-p4-6WQ"/>
+                                </items>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See stock Ios recents tab in phone app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb5-hj-pM1">
+                                <rect key="frame" x="60" y="285" width="294" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="237-0m-nvb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yen-Qq-cqx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sb5-hj-pM1" firstAttribute="centerX" secondItem="7Wi-fc-T6v" secondAttribute="centerX" id="7sm-oM-Bqo"/>
+                            <constraint firstItem="sb5-hj-pM1" firstAttribute="leading" secondItem="yen-Qq-cqx" secondAttribute="leading" constant="60" id="eOm-dY-Agl"/>
+                            <constraint firstItem="sb5-hj-pM1" firstAttribute="centerX" secondItem="qUB-aS-ydC" secondAttribute="centerX" id="fYJ-2U-mx4"/>
+                            <constraint firstItem="sb5-hj-pM1" firstAttribute="top" secondItem="yen-Qq-cqx" secondAttribute="top" constant="241" id="jjq-a7-Fam"/>
+                            <constraint firstItem="qUB-aS-ydC" firstAttribute="bottom" secondItem="yen-Qq-cqx" secondAttribute="bottom" id="ppI-ay-Nbv"/>
+                            <constraint firstItem="qUB-aS-ydC" firstAttribute="leading" secondItem="7Wi-fc-T6v" secondAttribute="leading" id="rSW-Y9-JDI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pqS-Vm-O3Q" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="2104.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="circle.grid.3x3.fill" catalog="system" width="128" height="112"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="envelope.fill" catalog="system" width="128" height="93"/>
+        <image name="flame" catalog="system" width="108" height="128"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <image name="phone.fill.arrow.up.right" catalog="system" width="128" height="115"/>
+        <image name="recordingtape" catalog="system" width="128" height="59"/>
+        <image name="wrench.and.screwdriver.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
